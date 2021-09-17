@@ -1,0 +1,277 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*------------------------------cloud-----------------------*/
+.cloud{
+    min-height: 80vh;
+    width: 100%;
+    padding-top: 50px;
+    justify-content: center;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cloud .cloud-info {
+    width: 100%;
+    text-align: center;
+}
+.cloud .cloud-info .cloud-info-heading{
+    font-size: 5rem;
+    font-weight: 500;
+    color: white;
+}
+.cloud .cloud-info .cloud-info-subheading{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    color: whitesmoke;
+}
+.cloud .cloud-info .cloud-info-button{
+    margin-top: 30px;
+    padding: 2rem 5rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    letter-spacing: .6rem;
+    background-color: rgba(85, 85, 85, 0.534);
+}
+.cloud .cloud-img{
+    height: auto;
+    width: 80%;
+    margin-bottom: 3rem;
+}
+.cloud .cloud-img img{
+    height: 100%;
+    width: 100%;
+}
+
+/*------------------------------About-----------------------*/
+.about{
+    width: 100%;
+    min-width: 50vh;
+    padding: 10rem 5rem;
+    flex-direction: column;
+}
+.about .about-info{
+    text-align: center;
+}
+.about .about-info .about-info-heading{
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    color: black;
+}
+.about .about-info .about-info-descript{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin-top: 10px;
+}
+.about .about-info .about-info-button{
+    padding: 1.6rem 2.6rem;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.548);
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.6rem;
+    letter-spacing: .2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.about .about-img .about-img-wrapper{
+    margin-top: 30px;
+    height: auto;
+    max-width: 400px;
+    position: relative;
+    display: inline-block;
+}
+.about .about-img .about-img-wrapper img{
+    height: 100%;
+    width: 100%;
+}
+.about .about-img .about-img-wrapper::after{
+    position: absolute;
+    content: '';
+    right: -5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70%;
+    height: 120%;
+    background-color: rgba(34, 33, 33, 0.158);
+    z-index: -1;
+}
+
+/*------------------------------Skills-----------------------*/
+
+.skills .skills-header{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.skills-header{
+    font-size: 2rem;
+}
+.skills .skills-header .skills-header-heading{
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    color: black;
+}
+.text-center:hover{
+    background: #000;
+    color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-top-right-radius:50px ;
+    border-bottom-right-radius: 50px ;
+    border-top-left-radius:50px;
+    border-bottom-right-radius: 50px;
+    transition: ls;
+    font-size: 3rem;
+}
+
+/*------------------------------hire me-----------------------*/
+.hire{
+    min-height: 10vh;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.212);
+    padding: 3rem 2rem;
+}
+.hire .hire-heading{
+    color: #000;
+    font-size: 2.2rem;
+    text-align: center;
+}
+.hire .hire-button{
+    padding: 2rem 3rem;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.267);
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .2rem;
+    margin-top: 10px;
+    color: whitesmoke;
+    transition: .3s ease background-color;
+}
+.hire .hire-button:hover{
+    background-color: black;
+}
+
+/*-----------------contact--------------------*/
+.contact{
+    min-height: 20vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./images/background.jpg);
+    color: #fff;
+    flex-direction: column;
+    text-align: center;
+    padding: 5rem;
+}
+.contact .contact-me{
+    padding: 20px;
+}
+.contact .contact-me .contact-me-heading{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.contact .contact-me .contact-me-info{
+    font-size: 1.4rem;
+    padding-top: 10px;
+    letter-spacing: .2rem;
+}
+
+/*-----------------footer section--------------------*/
+.contact .footer-social-follow .footer-social-icons a {
+    color: white;
+    font-size: 3rem;
+    margin: .4rem;
+    display: inline-block;
+}
+/*-----------------end footer section--------------------*/
+
+/*   media query section  */
+@media only screen and (min-width: 768px){
+    .cloud{
+        height: 100vh;
+        flex-direction: row;
+        padding-left: 10%;
+        justify-content: center;
+        align-items: center;
+    }
+    .cloud .cloud-info{
+        max-width: 30%;
+        text-align: left;
+    }
+    .cloud .cloud-info .cloud-info-subheading{
+        font-size: 1.3rem;
+        letter-spacing: .5rem;
+    }
+    .cloud .cloud-img{
+        min-width: 400px;
+        max-width: 1000px;
+    }
+    .about{
+        width: 80%;
+        margin: 0 auto;
+        flex-direction: row;
+    }
+    .about .about-info{
+        width: 50%;
+        text-align: left;
+        padding-right: 17rem;
+    }
+    .skills .skills-header .skills-header-heading{
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
