@@ -9,3 +9,5 @@ function myFunction() {
   xhttp.open("GET", "https://8v5ru96fbe.execute-api.us-east-1.amazonaws.com/Prod/get-visitor", true);
   xhttp.send();
 }
+
+myFunction()
